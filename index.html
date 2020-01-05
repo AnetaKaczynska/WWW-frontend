@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="script.js"></script>
+
+<!---------------------------------------------------------DATA TABLES--------------------------------------------------------->
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+</head>
+
+<body>
+
+<!-------------------------------------------------------------MENU------------------------------------------------------------->
+
+    <ol>
+        <li class="menu_home" href="#home"><a href="#">about us</a></li>
+
+        <li><a href="#">health</a>
+            <ul>
+                <li class="menu" href="#hiv"><a href="#">HIV</a></li>
+                <li class="menu" href="#bmi"><a href="#">BMI</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">society</a>
+            <ul>
+                <li class="menu" href="#hate_crimes"><a href="#">hate crimes</a></li>
+                <li class="menu" href="#homelessness"><a href="#">homelessness</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">entertainment</a>
+            <ul>
+                <li class="menu" href="#deniro"><a href="#">film roles</a></li>
+                <li class="menu" href="#books"><a href="#">books</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">other</a>
+            <ul>
+                <li class="menu" href="#occupations"><a href="#">occupations</a></li>
+                <li class="menu" href="#employees"><a href="#">employees</a></li>
+            </ul>
+        </li>
+    </ol>
+
+<!--------------------------------------------------------------HOME-------------------------------------------------------------->
+
+    <div id="home">
+        <h1>Welcome!</h1>
+        <h3>About us</h3>
+        <p>
+            Our page contains free statistic data divided into categories.
+            We use CVS files and convert them into HTML tables, so you can quickly display them in a clear way,
+            sort and filter them effectively.
+        </p>
+        <h3>How to use it?</h3>
+        <p>
+            Choose desired data from the menu above. As you scroll the page, more content will be load.
+            If you wish to sort the table or apply the filters, you have to load the whole data, by clicking on 'Load All' button.
+            Then you can click on column names to sort the table by them alternately in ascending and descending order.
+            To filter the table use 'Search' window.
+        </p>
+    </div>
+
+<!-------------------------------------------------------------TABELE------------------------------------------------------------->
+
+    <button type="button" style="display:none;">Load All</button>
+
+    <h3 class="info" id="hiv_info">Number of people (all ages) living with HIV estimates by country.</h3>
+    <div class="table" id="hiv"></div>
+
+    <h3 class="info" id="bmi_info">Mean body mass index among adults by country in 2016.</h3>
+    <div class="table" id="bmi"></div>
+
+    <h3 class="info" id="hate_crimes_info">Hate crimes by county and bias type in the State of New York in 2010.</h3>
+    <div class="table" id="hate_crimes"></div>
+
+    <h3 class="info" id="homelessness_info">Directory of homeless population in New York by years.</h3>
+    <div class="table" id="homelessness"></div>
+
+    <h3 class="info" id="deniro_info">Robert De Niro's roles ranked by users of some popular Internet service.</h3>
+    <div class="table" id="deniro"></div>
+
+    <h3 class="info" id="books_info">List of the most popular books in 2017.</h3>
+    <div class="table" id="books"></div>
+
+    <h3 class="info" id="occupations_info">Occupations of some popular Internet service users from US.</h3>
+    <div class="table" id="occupations"></div>
+
+    <h3 class="info" id="employees_info">Sample data containing information about employees of fictional company.</h3>
+    <div class="table" id="employees"></div>
+
+</body>
+
+</html>

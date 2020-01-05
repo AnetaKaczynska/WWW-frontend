@@ -1,0 +1,154 @@
+body {
+    background-color: #414141;
+    font-family: "Verdana";
+    color: white;
+}
+
+ul {
+    box-shadow: 5px 5px 5px #161616;
+}
+
+ol {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    font-size:18px;
+    height:2em;
+    line-height:2em;
+    text-align:center;
+}
+
+ol a {
+    display:block;
+    text-decoration:none;
+    color: white;
+    padding:0 5px;
+}
+
+ol > li {
+    float:left;
+    width:150px;
+    margin-left:1px;
+    background-color: #747474;
+    height:2em;
+}
+
+ol > li:first-child {
+    margin-left:0;
+}
+
+ol > li:hover {
+    background-color: #747474;
+}
+
+ol > li:hover > a {
+    color:greenyellow;
+}
+
+ol > li:hover > ul {
+    display:block;
+}
+
+ol > li > ul {
+    display:none;
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+ol > li > ul > li {
+    position:relative;
+    background-color: #626262;
+    /*border: 1px solid #414141;*/
+}
+
+ol > li > ul > li > a {
+    border-top:1px solid #414141;
+}
+
+ol > li > ul > li:hover {
+    background-color: #747474;
+    cursor: pointer;
+}
+
+ol > li > ul > li:hover > a {
+    color: greenyellow;
+}
+
+.table {
+    margin-top: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #626262;
+    width: 100%;
+}
+
+th {
+    background-color: #747474;
+}
+
+table, th, td{
+    border: 1px solid #414141;
+}
+
+th, td {
+    padding: 10px;
+}
+
+tbody > tr:hover{
+    background-color: #747474;
+    color: greenyellow;
+}
+
+button {
+    align-content: center;
+    background-color: #747474;
+    border: none;
+    font-family: "Verdana";
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 auto;
+    display:block;
+    margin-top: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input {
+    background-color: #747474;
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+    border: none;
+}
+
+input:focus, button:focus{
+    outline: 1px solid greenyellow;
+}
+
+th:focus {
+    outline: 1px solid greenyellow;
+    color: greenyellow;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    color: white;
+    font-size: 22px;
+    weight: bold;
+}
+
+h1 , h3 {
+    color: greenyellow;
+}
